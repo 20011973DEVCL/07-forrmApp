@@ -6,12 +6,12 @@ import { SwitchesPageComponent } from './pages/switches-page/switches-page.compo
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     children: [
-      {path: 'basic',     component: BasicPageComponent},
-      {path: 'dynamic',   component: DynamicPageComponent},
-      {path: 'switches',  component: SwitchesPageComponent},
-      {path: '**',   redirectTo: 'basic' },
+      { path: 'basic', component: BasicPageComponent },
+      { path: 'dynamic', component: DynamicPageComponent },
+      { path: 'switches', component: SwitchesPageComponent },
+      { path: '**', redirectTo: 'basic' },
     ]
   }
 ];
